@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #0e1117;
+  color: #ffffff;
+}
+
+header.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #1f6feb, #9333ea);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.download-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+input, select, button {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+input {
+  background: #161b22;
+  color: #fff;
+}
+
+select {
+  background: #161b22;
+  color: #fff;
+}
+
+button {
+  background: #1f6feb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+.features, .faq {
+  margin-top: 2rem;
+}
+
+.features h2, .faq h2 {
+  text-align: center;
+  color: #58a6ff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+ul li {
+  margin: 10px 0;
+  padding-left: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
