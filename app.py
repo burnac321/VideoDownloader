@@ -20,7 +20,12 @@ def download_video():
         return jsonify({"error": "Missing video URL"}), 400
 
     temp_dir = tempfile.mkdtemp()
-    ydl_opts = {"outtmpl": f"{temp_dir}/%(title)s.%(ext)s", "quiet": True}
+    ydl_opts = {
+        "outtmpl": f"{temp_dir}/%(title)s.%(ext)s",
+        "quiet": True,
+        "noplaylist": True,
+        "restrictfilenames": True
+    }
 
     if format_type == "audio":
         ydl_opts["format"] = "bestaudio/best"
@@ -45,4 +50,4 @@ def download_video():
         os.rmdir(temp_dir)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=10000)
