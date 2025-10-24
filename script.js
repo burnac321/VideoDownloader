@@ -11,7 +11,7 @@ document.getElementById("downloadBtn").addEventListener("click", async () => {
   status.textContent = "⏳ Preparing your download...";
 
   // Backend placeholder (we’ll connect this later)
-  const backendUrl = "https://your-backend-url/download";
+  const backendUrl = "https://https://y2matez-backend.onrender.com/";
 
   try {
     const res = await fetch(backendUrl, {
