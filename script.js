@@ -11,7 +11,7 @@ document.getElementById("downloadBtn").addEventListener("click", async () => {
   status.textContent = "⏳ Preparing your download...";
 
   // Backend placeholder (we’ll connect this later)
-  const backendUrl = "https://videodownloader-7547.onrender.com/download";
+  const backendUrl = "https://videodownloader-7547.onrender.com";
 
   try {
     const res = await fetch(backendUrl, {
